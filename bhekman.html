@@ -18,21 +18,7 @@
 
     <!--JAVASCRIPT-->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-    <script type="text/javascript" src="http://flesler-plugins.googlecode.com/files/jquery.scrollTo-1.4.2-min.js"></script>
-    <script type="text/javascript" src="http://flesler-plugins.googlecode.com/files/jquery.localscroll-1.2.7-min.js"></script>
-    <!-- javascript that will initiate jQuery and the LocalScroll plugin -->
-    <script type="text/javascript">// <![CDATA[
-      // When the document is loaded...
-      $(document).ready(function()
-      {
-        $(.body).localScroll(
-          duration: 1000,
-          offset: -50
-        });
-      });
-      // ]]>
-    </script>
-
+    <script src="js/smooth-scroll.js"></script>
   </head>
 
   <body>
@@ -49,22 +35,22 @@
         </div>
         <div class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#home" title="Home">
+            <li><a data-scroll href="#home" title="Home">
               <span class="glyphicon glyphicon-home" style="font-size:36px;"></span>
             </a></li>
-            <li><a href="#about" title="About">
+            <li><a data-scroll href="#about" title="About">
               <span class="glyphicon glyphicon-user" style="font-size:36px;"></span>
             </a></li>
-            <li><a href="#work" title="Work Experience">
+            <li><a data-scroll href="#work" title="Work Experience">
               <span class="glyphicon glyphicon-briefcase" style="font-size:36px;">
             </span></a></li>
-            <li><a href="#resume" title="Resume">
+            <li><a data-scroll href="#resume" title="Resume">
               <span class="glyphicon glyphicon-list-alt" style="font-size:36px;">
             </span></a></li>
-            <!--<li><a href="#hobbies" title="Hobbies">
+            <!--<li><a data-scroll href="#hobbies" title="Hobbies">
               <span class="glyphicon glyphicon-glass" style="font-size:36px;"></span>
             </a></li>-->
-            <li><a href="#contact" title="Contact">
+            <li><a data-scroll href="#contact" title="Contact">
               <span class="glyphicon glyphicon-send" style="font-size:36px;"></span>
             </a></li>
           </ul>
@@ -120,11 +106,18 @@
         <b>Phone:</b> (757) 606-0042
       </div>
     </div>
-
-    <!--SCRIPTS-->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!--<script type="text/javascript" src="bhekman/js/bootstrap.min.js"></script>-->
-
   </body>
+
+  <footer>
+    <script>
+      smoothScroll.init({
+        speed: 1000,
+        easing: 'easeInOutQuart',
+        updateURL: false,
+        offset: 71
+      });
+    </script>
+  </footer>
+
 </html>
 
