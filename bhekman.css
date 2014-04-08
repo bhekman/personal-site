@@ -2,7 +2,7 @@ body {
   padding-top: 50px;
 }
 .intro {
-  padding: 40px 15px;
+  padding: 140px 15px 60px;
   text-align: center;
 }
 .section {
@@ -45,9 +45,21 @@ subtitle {
 }
 
 /*COLORS!*/
+.earthtoneA {
+  color: white;
+  background-color: #493829;
+}
+.earthtoneE {
+  color: white;
+  background-color: #855723;
+}
+.earthtoneJ {
+  color: white;
+  background-color: #404F24;
+}
 .green {
   color: #2B2B2B;
-  background-color: #00BF32;
+  background-color: #607625;
 }
 .blue {
   color: #2B2B2B;
@@ -59,20 +71,22 @@ subtitle {
 }
 .red {
   color: #2B2B2B;
-  background-color: #FF1E00;
+  background-color: #B32F24;
 }
 .yellow {
   color: #2B2B2B;
   background-color: #FFD900;
 }
-.dkgray { 
-  color: white; 
-  background-color: #2B2B2B; 
-}
 .ltgray {
-  /*color: white;*/
+  color: #2B2B2B;
+  background-color: #878787;
+}
+.gray {
+  color: #2B2B2B;
+  background-color: gray;
+}
+.dkgray {
   color: #989898;
-  /*background-color: #2B2B2B;*/
   background-color: #202020;
 }
 .maroon {
