@@ -22,42 +22,52 @@
   </head>
 
   <body>
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container center">
-        <ul class="nav navbar-nav">
-          <li><a data-scroll href="#home" title="Home">
-            <span class="glyphicon glyphicon-home" style="font-size:36px;"></span>
-          </a></li>
-          <li><a data-scroll href="#about" title="About">
-            <span class="glyphicon glyphicon-user" style="font-size:36px;"></span>
-          </a></li>
-          <li><a data-scroll href="#resume" title="Resume">
-            <span class="glyphicon glyphicon-list-alt" style="font-size:36px;">
-          </span></a></li>
-          <li><a data-scroll href="#work" title="Work Experience">
-            <span class="glyphicon glyphicon-briefcase" style="font-size:36px;">
-          </span></a></li>
-          <li><a data-scroll href="#education" title="Education">
-            <span class="glyphicon glyphicon-pencil" style="font-size:36px;">
-          </span></a></li>
-          <li><a data-scroll href="#projects" title="projects">
-            <span class="glyphicon glyphicon-folder-open" style="font-size:36px;">
-          </span></a></li>
-          <li><a data-scroll href="#contact" title="Contact">
-            <span class="glyphicon glyphicon-send" style="font-size:36px;"></span>
-          </a></li>
-        </ul>
+    <div class="navbar navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-background">
+          <div class="dkgray center" id="intro">
+            <title>Bradley Hekman</title>
+          </div>
+          <div class="dkgray center">
+            <ul class="nav navbar-nav">
+              <li><a data-scroll href="#top" title="Home">
+                <span class="navicon glyphicon glyphicon-home" style="font-size:36px; color:black;"></span>
+              </a></li>
+              <li><a data-scroll href="#about" title="About">
+                <span class="navicon glyphicon glyphicon-user" style="font-size:36px; color:black;"></span>
+              </a></li>
+              <li><a data-scroll href="#resume" title="Resume">
+                <span class="navicon glyphicon glyphicon-list-alt" style="font-size:36px; color:black;">
+              </span></a></li>
+              <li><a data-scroll href="#work" title="Work Experience">
+                <span class="navicon glyphicon glyphicon-briefcase" style="font-size:36px; color:black;">
+              </span></a></li>
+              <li><a data-scroll href="#education" title="Education">
+                <span class="navicon glyphicon glyphicon-pencil" style="font-size:36px; color:black;">
+              </span></a></li>
+              <li><a data-scroll href="#projects" title="projects">
+                <span class="navicon glyphicon glyphicon-folder-open" style="font-size:36px; color:black;">
+              </span></a></li>
+              <li><a data-scroll href="#contact" title="Contact">
+                <span class="navicon glyphicon glyphicon-send" style="font-size:36px; color:black;"></span>
+              </a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div id="home">
-      <div class="green intro">
-        <title>Bradley Hekman</title>
-        <br>
-        <subtitle>Hello world. You can call me Brad.<br>This is my personal website.</subtitle>
-      </div>
+    <div class="divider" id="top">
+    </div>
 
-      <div class="gray section" id="about">
+    <div class="container">
+      <!--<div class="section" id="intro">-->
+        <!--<title>Bradley Hekman</title>-->
+        <!--<br>-->
+        <!--<subtitle>Hello world. You can call me Brad.<br>This is my personal website.</subtitle>-->
+      <!--</div>-->
+
+      <div class="section" id="about">
         <subtitle>About</subtitle>
         I like coding. I like coffee. I would tell you more, but I'd rather work on this site. It's still under construction.
         <br>
@@ -66,7 +76,7 @@
         <br>
       </div>
 
-      <div class="dkgray section" id="resume">
+      <div class="section" id="resume">
         <br>
         <span style="display:inline-block; font-size: 2em;">
           Resume  
@@ -78,7 +88,7 @@
         <br>
       </div>
 
-      <div class="green section" id="work">
+      <div class="section" id="work">
         <subtitle>Work Experience</subtitle>
         <h4>Google (May 2014 - August 2014)</h4>
         I will be interning with the Google Maps team in Mountain View this summer. We'll we working on improving the data flow from Google's self-driving cars to the Google Streetview product.
@@ -89,7 +99,7 @@
         <br>
       </div>
 
-      <div class="gray section" id="education">
+      <div class="section" id="education">
         <subtitle>Education</subtitle>
         <h4>University of Michigan (Sept 2011 - May 2015)</h4>
         <ul>
@@ -114,15 +124,9 @@
         </ul>
       </div>
 
-      <div class="dkgray section" id="projects">
+      <div class="section" id="projects">
         <subtitle>Personal Projects</subtitle>
         <ul>
-          <li><a href="https://github.com/bhekman">
-            <h4>Github Profile</h4>
-          </a></li>
-          <li><a href="http://stackoverflow.com/users/1178417/bhekman">
-            <h4>StackOverflow Profile</h4>
-          </a></li>
           <li><a href="https://seelio.com/w/4e0/interning-with-protei">
             <h4>Protei</h4>
           </a></li>
@@ -132,16 +136,42 @@
           <li><a href="https://seelio.com/w/1if/maize-meals">
             <h4>Maize Meals</h4>
           </a></li>
+          <br>
+          <li>
+            <h4>Will add more soon...</h4>
+          </li>
       </div>
 
-      <div class="green section" id="contact">
-        <subtitle>Contact</subtitle>
-        <b>Email:</b> 
-        <a href="mailto:bradley.hekman@gmail.com?Subject=Hello!">Bradley.Hekman@gmail.com</a>
-        <br>
-        <b>Phone:</b>
-        <a href="tel:7576060042">757.606.0042</a>
+      <div class="row section" id="contact">
+        <div class="col-md-6">
+          <subtitle>Contact</subtitle>
+          <b>Email:</b> 
+          <a href="mailto:bradley.hekman@gmail.com?Subject=Hello!">Bradley.Hekman@gmail.com</a>
+          <br>
+          <b>Phone:</b>
+          <a href="tel:7576060042">757.606.0042</a>
+        </div>
+
+        <div class="col-md-6">
+          <subtitle>Profiles</subtitle>
+          <ul>
+            <li><a href="https://github.com/bhekman">
+              <h4>Github Profile</h4>
+            </a></li>
+            <li><a href="http://stackoverflow.com/users/1178417/bhekman">
+              <h4>StackOverflow Profile</h4>
+            </a></li>
+          </ul>
+        </div>
       </div>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
     </div>
   </body>
 
@@ -151,7 +181,7 @@
         speed: 750,
         easing: 'easeInOutQuart',
         updateURL: false,
-        offset: 71
+        offset: 170
       });
     </script>
   </footer>
